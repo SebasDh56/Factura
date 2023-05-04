@@ -1,16 +1,16 @@
 import java.util.Scanner;
 
-public class Llantas {
-    private int precioNormal=150;
-    private int precioAlPorMayor=130;
-    private int resultado;
+public class Frenos {
+    private int precioNormal=55;
+    private int precioAlPorMayor=45;
+    int resultado;
 
-    public void descuentoLlantas(){
+    public void descuentoFrenos(){
         Scanner scanner = new Scanner(System.in);
-        System.out.println("La catidad de llantas ");
+        System.out.println("La catidad de Kit de pastillas de frenos ");
         int cantidad = scanner.nextInt();
-        System.out.println("Valor por "+cantidad+" Llantas");
-        if (cantidad >= 6) {
+        System.out.println("Valor por "+cantidad+" Kits de pastillas de frenos ");
+        if (cantidad >= 12) {
             int resultado = cantidad * precioAlPorMayor;
 
             System.out.println(" El costo es de " + resultado+ ",00 $");
@@ -24,13 +24,7 @@ public class Llantas {
             e.printStackTrace();
         }
 
-
-        }
+    }
 
 
 }
-
-
-
-
-

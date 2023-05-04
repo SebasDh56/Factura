@@ -1,16 +1,16 @@
 import java.util.Scanner;
 
-public class Llantas {
-    private int precioNormal=150;
-    private int precioAlPorMayor=130;
-    private int resultado;
+public class Faro {
+    private int precioNormal=70;
+    private int precioAlPorMayor=60;
+    int resultado;
 
-    public void descuentoLlantas(){
+    public void descuentoFaro(){
         Scanner scanner = new Scanner(System.in);
-        System.out.println("La catidad de llantas ");
+        System.out.println("La catidad de Faro ");
         int cantidad = scanner.nextInt();
-        System.out.println("Valor por "+cantidad+" Llantas");
-        if (cantidad >= 6) {
+        System.out.println("Valor por "+cantidad+" Faro ");
+        if (cantidad >= 10) {
             int resultado = cantidad * precioAlPorMayor;
 
             System.out.println(" El costo es de " + resultado+ ",00 $");
@@ -22,15 +22,5 @@ public class Llantas {
             Thread.sleep(1000); // Espera 1 segundo (1000 milisegundos)
         } catch (InterruptedException e) {
             e.printStackTrace();
-        }
-
-
-        }
-
-
+        }}
 }
-
-
-
-
-

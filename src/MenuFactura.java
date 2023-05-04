@@ -33,7 +33,71 @@ public class MenuFactura {
                         opciones.opciones();
 
                 }
-            case 2: //kit de pastillas etc
-        }
+            case 2:
+                Frenos descuentoFrenos = new Frenos();
+                descuentoFrenos.descuentoFrenos();
+                System.out.println("Facturar mas productos ");
+                System.out.println("1. Si ");
+                System.out.println("2. NO ");
+                volver = sn.nextInt();
+                switch (volver) {
+                    case 1:
+                        MenuFactura productos = new MenuFactura();
+                        productos.productos();
+
+                    case 2:
+                        Menu opciones = new Menu();
+                        opciones.opciones();
+
+                }
+            case 3:
+                Embrague descuentoEmbrague = new Embrague();
+                descuentoEmbrague.descuentoEmbrague();
+                System.out.println("Facturar mas productos ");
+                System.out.println("1. Si ");
+                System.out.println("2. NO ");
+                volver = sn.nextInt();
+                switch (volver) {
+                    case 1:
+                        MenuFactura producto = new MenuFactura();
+                        producto.productos();
+
+                    case 2:
+                        Menu opciones = new Menu();
+                        opciones.opciones();
+                }
+            case 4:
+                Faro descuentoFaro = new Faro();
+                descuentoFaro.descuentoFaro();
+                System.out.println("Facturar mas productos ");
+                System.out.println("1. Si ");
+                System.out.println("2. NO ");
+                volver = sn.nextInt();
+                switch (volver) {
+                    case 1:
+                        MenuFactura producto = new MenuFactura();
+                        producto.productos();
+
+                    case 2:
+                        Menu opciones = new Menu();
+                        opciones.opciones();
+                }
+            case 5:
+                Radiador descuentoRadiador = new Radiador();
+                descuentoRadiador.descuentoRadiador();
+                System.out.println("Facturar mas productos ");
+                System.out.println("1. Si ");
+                System.out.println("2. NO ");
+                volver = sn.nextInt();
+                switch (volver) {
+                    case 1:
+                        MenuFactura producto = new MenuFactura();
+                        producto.productos();
+
+                    case 2:
+                        Menu opciones = new Menu();
+                        opciones.opciones();
+                }}}
+
     }
-}
+

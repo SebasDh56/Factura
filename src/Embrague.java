@@ -1,16 +1,16 @@
 import java.util.Scanner;
 
-public class Llantas {
-    private int precioNormal=150;
-    private int precioAlPorMayor=130;
-    private int resultado;
+public class Embrague {
+    private int precioNormal=180;
+    private int precioAlPorMayor=165;
+    int resultado;
 
-    public void descuentoLlantas(){
+    public void descuentoEmbrague(){
         Scanner scanner = new Scanner(System.in);
-        System.out.println("La catidad de llantas ");
+        System.out.println("La catidad de Kit de Embrague ");
         int cantidad = scanner.nextInt();
-        System.out.println("Valor por "+cantidad+" Llantas");
-        if (cantidad >= 6) {
+        System.out.println("Valor por "+cantidad+" Embrague ");
+        if (cantidad >= 8) {
             int resultado = cantidad * precioAlPorMayor;
 
             System.out.println(" El costo es de " + resultado+ ",00 $");
@@ -23,14 +23,5 @@ public class Llantas {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-
-
-        }
-
-
+    }
 }
-
-
-
-
-

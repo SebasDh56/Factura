@@ -14,8 +14,6 @@ public class Menu {
             System.out.println("1. Facturar producto");
             System.out.println("2. Imprimir factura");
             System.out.println("3. Salir");
-            System.out.println("4. Salir");
-
             System.out.println("Elija su opcion");
             opcion = sn.nextInt();
 
@@ -25,16 +23,15 @@ public class Menu {
                     productos.productos();
 
                 case 2:
-                    System.out.println("El valor total de los productos es de ");
+                    Imprimir descuentoTotal=new Imprimir();
+                    descuentoTotal.descuentoTotal();
                     break;
                 case 3:
-                    System.out.println("Has seleccionado la opcion 3");
-                    break;
-                case 4:
                     salir = true;
                     break;
+
                 default:
-                    System.out.println("Solo números entre 1 y 4");
+                    System.out.println("Solo números entre 1 y 3");
             }
         }
     }
